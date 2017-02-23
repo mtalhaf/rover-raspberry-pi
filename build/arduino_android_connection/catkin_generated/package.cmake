@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "arduino_android_connection")
 set(arduino_android_connection_VERSION "0.0.0")
-set(arduino_android_connection_MAINTAINER "ubuntu <ubuntu@todo.todo>")
+set(arduino_android_connection_MAINTAINER "Muhammad Talha <mtalhaf@gmail.com>")
 set(arduino_android_connection_PACKAGE_FORMAT "1")
 set(arduino_android_connection_BUILD_DEPENDS "rospy" "std_msgs")
 set(arduino_android_connection_BUILD_EXPORT_DEPENDS "rospy" "std_msgs")

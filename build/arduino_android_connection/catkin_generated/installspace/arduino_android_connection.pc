@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ros-raspberry-pi-node/install
+
+Name: arduino_android_connection
+Description: Description of arduino_android_connection
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ubuntu/ros-raspberry-pi-node/install/lib 
+Requires: 

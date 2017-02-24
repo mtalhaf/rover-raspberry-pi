@@ -41,7 +41,7 @@ from std_msgs.msg import String
 
 def lcd_printMessage(message):
     pub = rospy.Publisher('lcd/printMessage', String, queue_size=10)
-    rospy.init_node('LCD', anonymous=True)
+    rospy.init_node('LCD', anonymous=True, log_level=rospy.INFO, disable_signals=True)
     #rate = rospy.Rate(10) # 10hz
     if(not rospy.is_shutdown()):
         rospy.loginfo(message + str(rospy.get_time()))

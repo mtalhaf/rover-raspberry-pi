@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(arduino_android_connection_EXPORTED_TARGETS "")
+set(arduino_android_connection_EXPORTED_TARGETS "arduino_android_connection_generate_messages_cpp;arduino_android_connection_generate_messages_eus;arduino_android_connection_generate_messages_lisp;arduino_android_connection_generate_messages_nodejs;arduino_android_connection_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${arduino_android_connection_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${arduino_android_connection_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -182,7 +182,7 @@ foreach(depend ${depends})
   list(APPEND arduino_android_connection_EXPORTED_TARGETS ${${arduino_android_connection_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "arduino_android_connection-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${arduino_android_connection_DIR}/${extra})

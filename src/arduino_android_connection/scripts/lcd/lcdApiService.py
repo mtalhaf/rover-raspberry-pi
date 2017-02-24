@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from flask import Flask
 from printMessage import lcd_printMessage
 app = Flask(__name__)

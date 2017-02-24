@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD="/home/ubuntu/ros-raspberry-pi-node/build"
+export PYTHONPATH="/home/ubuntu/ros-raspberry-pi-node/devel/lib/python2.7/dist-packages:$PYTHONPATH"

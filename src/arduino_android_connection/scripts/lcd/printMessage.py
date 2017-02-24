@@ -39,18 +39,16 @@
 import rospy
 from std_msgs.msg import String
 
-def lcd_printMessage():
+def lcd_printMessage(message):
     pub = rospy.Publisher('lcd/printMessage', String, queue_size=10)
     rospy.init_node('LCD', anonymous=True)
-    rate = rospy.Rate(10) # 10hz
-    while not rospy.is_shutdown():
-        hello_str = "hello world %s" % rospy.get_time()
-        rospy.loginfo(hello_str)
-        pub.publish(hello_str)
-        rate.sleep()
+    #rate = rospy.Rate(10) # 10hz
+    if(not rospy.is_shutdown()):
+        rospy.loginfo(message + str(rospy.get_time()))
+        pub.publish(message)
 
 if __name__ == '__main__':
     try:
-        lcd_printMessage()
+        lcd_printMessage("test")
     except rospy.ROSInterruptException:
         pass

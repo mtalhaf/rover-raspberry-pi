@@ -5,4 +5,4 @@ Description: Description of arduino_android_connection
 Version: 0.0.0
 Cflags: 
 Libs: -L/home/ubuntu/ros-raspberry-pi-node/devel/lib 
-Requires: 
+Requires: rospy std_msgs message_runtime

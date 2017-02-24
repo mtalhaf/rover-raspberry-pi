@@ -257,17 +257,17 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
+# Target rules for targets named arduino_android_connection_gencpp
 
 # Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
+arduino_android_connection_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_gencpp
+.PHONY : arduino_android_connection_gencpp
 
 # fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f arduino_android_connection/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make arduino_android_connection/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
+arduino_android_connection_gencpp/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_gencpp.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_gencpp.dir/build
+.PHONY : arduino_android_connection_gencpp/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -283,17 +283,108 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
+# Target rules for targets named arduino_android_connection_gennodejs
 
 # Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
+arduino_android_connection_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_gennodejs
+.PHONY : arduino_android_connection_gennodejs
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f arduino_android_connection/CMakeFiles/std_msgs_generate_messages_py.dir/build.make arduino_android_connection/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+arduino_android_connection_gennodejs/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_gennodejs.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_gennodejs.dir/build
+.PHONY : arduino_android_connection_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_geneus
+
+# Build rule for target.
+arduino_android_connection_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_geneus
+.PHONY : arduino_android_connection_geneus
+
+# fast build rule for target.
+arduino_android_connection_geneus/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_geneus.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_geneus.dir/build
+.PHONY : arduino_android_connection_geneus/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_generate_messages
+
+# Build rule for target.
+arduino_android_connection_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_generate_messages
+.PHONY : arduino_android_connection_generate_messages
+
+# fast build rule for target.
+arduino_android_connection_generate_messages/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages.dir/build
+.PHONY : arduino_android_connection_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_generate_messages_cpp
+
+# Build rule for target.
+arduino_android_connection_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_generate_messages_cpp
+.PHONY : arduino_android_connection_generate_messages_cpp
+
+# fast build rule for target.
+arduino_android_connection_generate_messages_cpp/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_cpp.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_cpp.dir/build
+.PHONY : arduino_android_connection_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_generate_messages_eus
+
+# Build rule for target.
+arduino_android_connection_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_generate_messages_eus
+.PHONY : arduino_android_connection_generate_messages_eus
+
+# fast build rule for target.
+arduino_android_connection_generate_messages_eus/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_eus.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_eus.dir/build
+.PHONY : arduino_android_connection_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_generate_messages_nodejs
+
+# Build rule for target.
+arduino_android_connection_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_generate_messages_nodejs
+.PHONY : arduino_android_connection_generate_messages_nodejs
+
+# fast build rule for target.
+arduino_android_connection_generate_messages_nodejs/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_nodejs.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_nodejs.dir/build
+.PHONY : arduino_android_connection_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make arduino_android_connection/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make arduino_android_connection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -309,17 +400,69 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
+# Target rules for targets named arduino_android_connection_genpy
 
 # Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
+arduino_android_connection_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_genpy
+.PHONY : arduino_android_connection_genpy
 
 # fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f arduino_android_connection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make arduino_android_connection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+arduino_android_connection_genpy/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_genpy.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_genpy.dir/build
+.PHONY : arduino_android_connection_genpy/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_generate_messages_lisp
+
+# Build rule for target.
+arduino_android_connection_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_generate_messages_lisp
+.PHONY : arduino_android_connection_generate_messages_lisp
+
+# fast build rule for target.
+arduino_android_connection_generate_messages_lisp/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_lisp.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_lisp.dir/build
+.PHONY : arduino_android_connection_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_genlisp
+
+# Build rule for target.
+arduino_android_connection_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_genlisp
+.PHONY : arduino_android_connection_genlisp
+
+# fast build rule for target.
+arduino_android_connection_genlisp/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_genlisp.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_genlisp.dir/build
+.PHONY : arduino_android_connection_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named arduino_android_connection_generate_messages_py
+
+# Build rule for target.
+arduino_android_connection_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_android_connection_generate_messages_py
+.PHONY : arduino_android_connection_generate_messages_py
+
+# fast build rule for target.
+arduino_android_connection_generate_messages_py/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_py.dir/build.make arduino_android_connection/CMakeFiles/arduino_android_connection_generate_messages_py.dir/build
+.PHONY : arduino_android_connection_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f arduino_android_connection/CMakeFiles/std_msgs_generate_messages_py.dir/build.make arduino_android_connection/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
 
 # Help Target
 help:
@@ -341,11 +484,22 @@ help:
 	@echo "... install/strip"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... std_msgs_generate_messages_eus"
+	@echo "... arduino_android_connection_gencpp"
 	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... arduino_android_connection_gennodejs"
+	@echo "... arduino_android_connection_geneus"
+	@echo "... arduino_android_connection_generate_messages"
+	@echo "... arduino_android_connection_generate_messages_cpp"
+	@echo "... arduino_android_connection_generate_messages_eus"
+	@echo "... arduino_android_connection_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... arduino_android_connection_genpy"
+	@echo "... arduino_android_connection_generate_messages_lisp"
+	@echo "... arduino_android_connection_genlisp"
+	@echo "... arduino_android_connection_generate_messages_py"
+	@echo "... std_msgs_generate_messages_py"
 .PHONY : help
 
 

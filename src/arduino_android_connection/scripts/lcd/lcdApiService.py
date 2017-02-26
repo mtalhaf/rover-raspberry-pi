@@ -1,14 +1,12 @@
 #!/usr/bin/env python
-from flask import Flask, request
+from flask import Flask, request, Blueprint
 from printMessage import lcd_printMessage
-app = Flask(__name__)
 
-@app.route('/v1.0/lcd/print', methods=['GET'])
+lcd_api = Blueprint('lcd_api', __name__)
+
+@lcd_api.route('/v1.0/lcd/print', methods=['GET'])
 def printMessageOnLcd():
         message = request.args.get('message')
 	lcd_printMessage(message)
 	return "message printed"
-
-if __name__ == '__main__':
-	app.run(host='0.0.0.0')
 

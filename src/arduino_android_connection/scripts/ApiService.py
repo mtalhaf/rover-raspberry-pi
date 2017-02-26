@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask, request
+import rospy
 from movement.movementApiService import movement_api
 from lcd.lcdApiService import lcd_api
 

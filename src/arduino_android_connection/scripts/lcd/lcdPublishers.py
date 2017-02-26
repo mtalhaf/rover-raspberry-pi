@@ -47,8 +47,3 @@ def lcd_printMessage(message):
         rospy.loginfo(message + str(rospy.get_time()))
         pub.publish(message)
 
-if __name__ == '__main__':
-    try:
-        lcd_printMessage("test")
-    except rospy.ROSInterruptException:
-        pass

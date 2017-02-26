@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask, request, Blueprint
-from printMessage import lcd_printMessage
+from lcdPublishers import *
 
 lcd_api = Blueprint('lcd_api', __name__)
 

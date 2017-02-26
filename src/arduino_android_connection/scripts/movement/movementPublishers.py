@@ -66,3 +66,10 @@ def movement_turnRight():
     if(not rospy.is_shutdown()):
         rospy.loginfo("turning right" + str(rospy.get_time()))
         pub.publish()
+
+#publishes a stop rover topic which will stop the rover
+def movement_stopRover():
+    pub = rospy.Publisher('movement/stopRover', Empty, queue_size=10)
+    if(not rospy.is_shutdown()):
+        rospy.loginfo("stopping rover" + str(rospy.get_time()))
+        pub.publish()

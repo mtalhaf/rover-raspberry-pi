@@ -29,3 +29,9 @@ def turnRobotRight():
         movement_turnRight()
 	return "robot trning right"
 
+#added route which will stop the rover
+@movement_api.route('/v1.0/movement/stoprover', methods=['GET'])
+def stopRover():
+        movement_stopRover()
+	return "robot trning right"
+

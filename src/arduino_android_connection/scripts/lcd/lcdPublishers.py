@@ -39,6 +39,8 @@
 import rospy
 from std_msgs.msg import String
 
+#publishes a print message topic which will print the message to the lcd
+#on the rover
 def lcd_printMessage(message):
     pub = rospy.Publisher('lcd/printMessage', String, queue_size=10)
     if(not rospy.is_shutdown()):

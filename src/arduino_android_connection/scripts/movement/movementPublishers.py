@@ -41,28 +41,24 @@ from std_msgs.msg import Empty
 
 def movement_moveForward():
     pub = rospy.Publisher('movement/moveForward', Empty, queue_size=10)
-    rospy.init_node('Movement', anonymous=True, log_level=rospy.INFO, disable_signals=True)
     if(not rospy.is_shutdown()):
         rospy.loginfo("moving forward" + str(rospy.get_time()))
         pub.publish()
 
 def movement_moveBackward():
     pub = rospy.Publisher('movement/moveBackward', Empty, queue_size=10)
-    rospy.init_node('Movement', anonymous=True, log_level=rospy.INFO, disable_signals=True)
     if(not rospy.is_shutdown()):
         rospy.loginfo("moving backward" + str(rospy.get_time()))
         pub.publish()
 
 def movement_turnLeft():
     pub = rospy.Publisher('movement/turnLeft', Empty, queue_size=10)
-    rospy.init_node('Movement', anonymous=True, log_level=rospy.INFO, disable_signals=True)
     if(not rospy.is_shutdown()):
         rospy.loginfo("turning left" + str(rospy.get_time()))
         pub.publish()
 
 def movement_turnRight():
     pub = rospy.Publisher('movement/turnRight', Empty, queue_size=10)
-    rospy.init_node('Movement', anonymous=True, log_level=rospy.INFO, disable_signals=True)
     if(not rospy.is_shutdown()):
         rospy.loginfo("turning right" + str(rospy.get_time()))
         pub.publish()

@@ -37,35 +37,35 @@
 ## to the 'chatter' topic
 
 import rospy
-from std_msgs.msg import Empty
+from std_msgs.msg import Empty, UInt8
 
 #publishes a move forward topic which will move the rover forward
 def movement_moveForward():
-    pub = rospy.Publisher('movement/moveForward', Empty, queue_size=10)
+    pub = rospy.Publisher('movement/move', UInt8, queue_size=10)
     if(not rospy.is_shutdown()):
         rospy.loginfo("moving forward" + str(rospy.get_time()))
-        pub.publish()
+        pub.publish(1)
 
 #publishes a move forward topic which will move the rover backward
 def movement_moveBackward():
-    pub = rospy.Publisher('movement/moveBackward', Empty, queue_size=10)
+    pub = rospy.Publisher('movement/move', UInt8, queue_size=10)
     if(not rospy.is_shutdown()):
         rospy.loginfo("moving backward" + str(rospy.get_time()))
-        pub.publish()
+        pub.publish(2)
 
 #publishes a move forward topic which will turn the rover left
 def movement_turnLeft():
-    pub = rospy.Publisher('movement/turnLeft', Empty, queue_size=10)
+    pub = rospy.Publisher('movement/move', UInt8, queue_size=10)
     if(not rospy.is_shutdown()):
         rospy.loginfo("turning left" + str(rospy.get_time()))
-        pub.publish()
+        pub.publish(3)
 
 #publishes a move forward topic which will turn the rover right
 def movement_turnRight():
-    pub = rospy.Publisher('movement/turnRight', Empty, queue_size=10)
+    pub = rospy.Publisher('movement/move', UInt8, queue_size=10)
     if(not rospy.is_shutdown()):
         rospy.loginfo("turning right" + str(rospy.get_time()))
-        pub.publish()
+        pub.publish(4)
 
 #publishes a stop rover topic which will stop the rover
 def movement_stopRover():

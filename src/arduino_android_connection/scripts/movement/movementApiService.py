@@ -33,5 +33,5 @@ def turnRobotRight():
 @movement_api.route('/v1.0/movement/stoprover', methods=['GET'])
 def stopRover():
         movement_stopRover()
-	return "robot trning right"
+	return "stopping rover"
 

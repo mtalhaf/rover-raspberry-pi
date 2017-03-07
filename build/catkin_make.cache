@@ -1,0 +1,2 @@
+arduino_android_connection
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/ros-raspberry-pi-node/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros-raspberry-pi-node/install -G Unix Makefiles
